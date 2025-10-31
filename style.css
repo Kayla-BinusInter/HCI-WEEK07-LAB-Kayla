@@ -1,0 +1,221 @@
+body{
+    background-color: #EDEDD3;
+    padding: 50px;
+}
+
+.pfp {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    top: 100px;
+    left: 100px;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.name {
+    position: absolute;
+    top: -15px;
+    left: 295px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    color: #E1EEBC;
+    z-index: 15;
+}
+
+.occupation {
+    position: absolute;
+    top: 110px;
+    left: 295px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #C7EEBC;
+    z-index: 15;
+}
+
+.occupation:hover{
+    color: #e4fcde;
+}
+
+.info {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #E1EEBC;
+    z-index: 15;
+}
+
+.bio {
+    position: absolute;
+    top: 290px;
+    left: 220px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #328E6E;
+    z-index: 15;
+}
+
+.thoughts {
+    position: absolute;
+    bottom: 280px;
+    right: 251px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #AA60C8;
+    z-index: 15;
+}
+
+.skills {
+    position: absolute;
+    bottom: -45px;
+    right: 230px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFDFEF;
+    z-index: 15;
+}
+
+.experience {
+    position: absolute;
+    bottom: 140px;
+    right: 30px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFDFEF;
+    z-index: 15;
+}
+
+.container {
+    position: relative;
+    max-width: 1280px;
+    margin: 5px auto;
+    height: 100vh;
+}
+
+.green-box {
+    position: absolute;
+    background-color: #328E6E;
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+}
+
+.greener-box {
+    position: absolute;
+    background-color: #67AE6E;
+    width: 280px;
+    height: 280px;
+    top: -25px;
+    left: 250px;
+}
+
+.greenest-box {
+    position: absolute;
+    background-color: #90C67C;
+    width: 180px;
+    height: 180px;
+    top: 240px;
+    left: 200px;
+}
+
+.purple-box {
+    position: absolute;
+    background-color: #AA60C8;
+    width: 315px;
+    height: 315px;
+    bottom: 50px;
+    right: 0;
+}
+
+.purpler-box {
+    position: absolute;
+    background-color: #D69ADE;
+    width: 220px;
+    height: 220px;
+    bottom: -25px;
+    right: 200px;
+}
+
+.purplest-box {
+    position: absolute;
+    background-color: #EABDE6;
+    width: 150px;
+    height: 150px;
+    bottom: 280px;
+    right: 235px;
+}
+
+footer{
+    color: rgb(70, 98, 24);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+footer:hover{
+    color: #90b363;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        height: auto;
+        padding-bottom: 80px;
+        margin-top: 20px;
+    }
+    
+    .pfp, .name, .occupation, .info, .bio, .thoughts, .skills, .experience,
+    .green-box, .greener-box, .greenest-box,
+    .purple-box, .purpler-box, .purplest-box {
+    position: static;
+    }
+
+    .pfp {
+        width: 120px;
+        height: 120px;
+        margin-bottom: -8px;
+        z-index: 2;
+    }
+
+    .name, .occupation {
+        text-align: center;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .occupation {
+        font-size: 12px;
+    }
+
+    .green-box, .greener-box, .greenest-box,
+    .purple-box, .purpler-box, .purplest-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+}
